@@ -1,0 +1,177 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+}
+
+
+
+#nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav p {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav p:hover {
+    color: #00d9ff;
+    transform: translateY(-2px);
+}
+
+
+
+.allcard {
+    width: 80%;
+    max-width: 900px;
+    margin: 80px auto;
+}
+
+.card1,
+.card2,
+.card3 {
+    padding: 35px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+
+
+
+.card1 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #00d9ff;
+}
+
+
+
+
+.card2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #00d9ff;
+}
+
+
+/* THIRD CARD */
+
+.card3 {
+    font-size: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.7;
+    color: #00d9ff;
+    font-weight: bold;
+}
+
+
+
+
+.card1:hover,
+.card2:hover,
+.card3:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 217, 255, 0.2);
+
+    border-color: #00d9ff;
+}
+
+
+
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    margin-top: 80px;
+}
+
+#footer p {
+    cursor: pointer;
+    color: #ddd;
+    transition: 0.3s;
+}
+
+#footer p:hover {
+    color: #00d9ff;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    nav {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    nav p {
+        font-size: 14px;
+    }
+
+    .allcard {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .card1 {
+        font-size: 23px;
+    }
+
+    .card2 {
+        font-size: 21px;
+    }
+
+    .card3 {
+        font-size: 17px;
+    }
+
+    #footer {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+
